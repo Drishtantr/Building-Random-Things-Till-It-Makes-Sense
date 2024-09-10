@@ -1,13 +1,31 @@
 from fastapi import FastAPI, HTTPException
 from datetime import datetime
+from schemas import Car
 
 app = FastAPI()
 
 db = [
-    {"id": 1, "size": "small", "fuel": "electric", "price": 100},
-    {"id": 2, "size": "medium", "fuel": "petrol", "price": 150},
-    {"id": 3, "size": "large", "fuel": "diesel", "price": 200},
-    {"id": 4, "size": "small", "fuel": "petrol", "price": 120},
+    {"id": 1, "size": "small", "fuel": "electric", "doors": 3, "transmission": "automatic"},
+    {"id": 2, "size": "medium", "fuel": "gasoline", "doors": 4, "transmission": "manual"},
+    {"id": 3, "size": "large", "fuel": "diesel", "doors": 5, "transmission": "automatic"},
+    {"id": 4, "size": "small", "fuel": "electric", "doors": 3, "transmission": "automatic"},
+    {"id": 5, "size": "medium", "fuel": "gasoline", "doors": 4, "transmission": "manual"},
+    {"id": 6, "size": "large", "fuel": "diesel", "doors": 5, "transmission": "automatic"},
+    {"id": 7, "size": "small", "fuel": "electric", "doors": 3, "transmission": "automatic"},
+    {"id": 8, "size": "medium", "fuel": "gasoline", "doors": 4, "transmission": "manual"},
+    {"id": 9, "size": "large", "fuel": "diesel", "doors": 5, "transmission": "automatic"},
+    {"id": 10, "size": "small", "fuel": "electric", "doors": 3, "transmission": "automatic"},
+    {"id": 11, "size": "medium", "fuel": "gasoline", "doors": 4, "transmission": "manual"},
+    {"id": 12, "size": "large", "fuel": "diesel", "doors": 5, "transmission": "automatic"},
+    {"id": 13, "size": "small", "fuel": "electric", "doors": 3, "transmission": "automatic"},
+    {"id": 14, "size": "medium", "fuel": "gasoline", "doors": 4, "transmission": "manual"},
+    {"id": 15, "size": "large", "fuel": "diesel", "doors": 5, "transmission": "automatic"},
+    {"id": 16, "size": "small", "fuel": "electric", "doors": 3, "transmission": "automatic"},
+    {"id": 17, "size": "medium", "fuel": "gasoline", "doors": 4, "transmission": "manual"},
+    {"id": 18, "size": "large", "fuel": "diesel", "doors": 5, "transmission": "automatic"},
+    {"id": 19, "size": "small", "fuel": "electric", "doors": 3, "transmission": "automatic"},
+    {"id": 20, "size": "medium", "fuel": "gasoline", "doors": 4, "transmission": "manual"}
+
 ]
 
 # add get_cars(), serve at /api/cars, return the data
